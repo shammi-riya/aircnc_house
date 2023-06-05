@@ -3,6 +3,7 @@ import Main from "../layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import SighinUp from "../Pages/SighinUp/SighinUp";
+import Roomdetails from "../Pages/Roomdetails/Roomdetails";
 
 
   const router = createBrowserRouter([
@@ -13,6 +14,10 @@ import SighinUp from "../Pages/SighinUp/SighinUp";
         {
           path: "/",
           element: <Home></Home>
+        },
+        {
+          path: "/room/:id",
+          element: <Roomdetails></Roomdetails>
         },
       ],
     },
